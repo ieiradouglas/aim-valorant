@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap');
+:root {
+    --cor-texto:#FF4655;
+    --background-texto:#121629;
+    --cor-texto-mira:#FFFFFF;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style: none;
+}
+body {
+    background: #232946;
+    font-size:26px;
+    color: var(--cor-texto-mira);
+    font-family: "Rowdies";
+    user-select: none;
+}
+
+header {
+    background:#121629;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid white;
+}
+
+.header {
+    width: 980px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+main {
+    display: flex;
+    justify-content: center;
+}
+
+
+.contents {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.aim-block {
+    display: flex;
+    flex-direction:column;
+    margin: 20px;
+    max-width: 230px;
+    flex:1;
+}
+.aim-block:hover {
+    transition:0.4s;
+    transform:scale(1.5);
+    border: 1px solid white;
+}
+
+.aim-img {
+    width: 100%;
+}
+
+.aim-description {
+    text-align: center;
+    background:var(--background-texto);
+    color: var(--cor-texto-mira);
+    font-family: "Rowdies";
+    font-weight: 300;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal {
+    position: fixed;
+    top:100px;
+    padding: 10px;
+    width:100%;
+    max-width: 980px;
+    height: 480px;
+    background:var(--background-texto);
+    border:1px solid white;
+    border-radius: 5px;
+    display:none;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.btFechar {
+    position: absolute;
+    top:3%;
+    left:96%;
+
+    font-family: "Rowdies";
+    font-size: 24px;
+    color:black;
+    background:rgb(206, 6, 6);
+    border-radius:1%;
+    border: 1px solid black;
+    box-shadow: 1px 1px 2px black;
+    padding:5px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.btFechar:hover {
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+.modal-img-info {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px dashed white;
+    flex:1;
+}
+
+.modal-img-info h2 {
+    color: white;
+    margin-bottom:60px;
+}
+
+.modal-img-info img{
+    height: 200px;
+}
+
+.modal-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex:1;
+}
+
+.aim-info {
+    margin:30px;
+}
+
+.modal-cross {
+    transform:scale(1.5);
+    transition:1s;
+}
+
